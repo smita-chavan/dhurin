@@ -1,0 +1,372 @@
+@import url(bootstrap.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2B2B2B;
+   
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 30px 0 10px;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.bg-dark-black {
+    background-color: #000000;
+}
+
+.logo img {
+    width: 319px;
+    height: 42px;
+}
+
+.btn {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.btn-2 {
+    background-color: #EFC600;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.btn-2:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* banner css */
+
+.banner {
+    padding: 50px 0px;
+    background-color: #000000;
+    position: relative;
+    
+}
+
+.banner .pre-img {
+    position: absolute;
+    width: 60%;
+    left: -15%;
+    bottom: 0%;
+    z-index: 9999;
+    /* opacity: 0.33; */
+}
+
+.banner-details {
+    margin-top: 80px;
+}
+
+.banner-details h1,
+.banner-details p {
+    color: #ffffff;
+}
+
+.banner-details h1 {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.banner-details p {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.banner-details span {
+    color: #EFC600;
+    font-weight: bold;
+
+}
+
+/* form css */
+.form {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.signup-head {
+    color: #000000;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    background: none;
+    border-bottom: 1px solid #EFC600;
+    display: table-cell;
+}
+
+.signup-head:after {
+    content: "";
+    display: table-cell;
+    width: 100%;
+}
+
+.form-note {
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+label {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.form-control {
+    border: none;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+     !important;
+    border-color: transparent !important;
+    background-color: #F0F0F0;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.error {
+    font-size: 10px;
+    color: red;
+    margin-bottom: 0;
+}
+.bg-grey {
+    background-color: #F2F2F2;
+}
+
+.z-index-9{
+    z-index: 999;
+}
+
+.section-details h1 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.section-details p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.full-height {
+    align-items: center;
+}
+
+.bg-white {
+    background-color: #ffffff;
+    padding: 50px 80px;
+}
+
+.heading h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.bg-white h1 {
+    font-size: ;
+}
+
+.bg-black {
+    background-color: #151515;
+    padding: 50px 80px;
+}
+
+.text-white span {
+    color: #EFC600;
+}
+
+.content p.ml-md-3 {
+    align-self: center;
+    font-weight: 500;
+}
+
+.icon-top {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+ul.list-item {
+    margin-left: 30px;
+}
+
+.case-studies {
+    background-image: url(../images/case-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 60%;
+}
+
+.case-studies .bg-darkblack{
+    background-color: rgb(0 0 0 / 75%);
+       border-radius: 20px;
+    padding: 40px 30px;
+}
+
+/* Media query */
+@media screen and (min-width:767px) and (max-width: 991px){
+.bg-black,.bg-white{
+        padding: 50px 30px;
+    }
+}
+@media screen and (max-width:767px){
+    .bg-black,.bg-white{
+        padding: 30px 10px;
+    }
+    .banner .container{
+        max-width: 100%;
+    }
+    .heading h1 {
+    font-size: 24px;
+    line-height: 36px;
+}
+.section-details h1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+.section-details p {
+    font-size: 18px;
+}
+.content.bg-darkblack .icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-2 {
+    padding: 10px 28px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.content {
+    margin-bottom: 20px;
+}
+.banner-details h1 {
+    font-size: 28px;
+    line-height: 38px;
+}
+.banner-details p {
+    font-size: 20px;
+    line-height: 28px;
+}
+.banner .pre-img {
+    position: absolute;
+    width: 100%;
+    left: -15%;
+    top: 15%;
+    z-index: 99;
+    /* opacity: 0.33; */
+}
+.banner-details {
+    margin-top: 11px;
+    padding-bottom: 20%;
+}
+
+.banner .form{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.padd-0{
+    padding-left: 0;
+    padding-right: 0;
+}
+.case-studies {
+    background-size: 148%;
+}
+.case-studies{
+    background-size: 90%
+}
+header .container {
+    max-width: 100%;
+}
+.logo img {
+    width: 254px;
+    height: auto;
+}
+.banner {
+    padding: 0px;
+}
+.m-btm{
+    margin-bottom: 45px;
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+  .banner .pre-img {
+    position: absolute;
+    width: 100%;
+    left: -15%;
+    top: 15%;
+    z-index: 99;
+    /* opacity: 0.33; */
+}
+.banner-details {
+    margin-top: 11px;
+    padding-bottom: 4%;
+}
+
+.banner-details h1 {
+    font-size: 20px;
+    line-height: 26px;
+}
+.banner .form{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.padd-0{
+    padding-left: 0;
+    padding-right: 0;
+}
+.case-studies {
+    background-size: 148%;
+}
+.banner {
+    padding: 0px;
+}
+label {
+    font-size: 16px;
+}
+.signup-head {
+    font-size: 17px;
+}
+}
